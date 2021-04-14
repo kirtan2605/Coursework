@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}	%only 10 to 12 working in article
+\usepackage[left=2cm, right=2cm, top=0.2cm]{geometry}
+
+\usepackage{upgreek}
+%type greek letter command between $' '$ !!
+
+    \usepackage{listings}
+\lstset{ 
+	language=Matlab,                		% choose the language of the code
+	%	basicstyle=10pt,       				% the size of the fonts that are used for the code
+	numbers=left,                  			% where to put the line-numbers
+	numberstyle=\footnotesize,      		% the size of the fonts that are used for the line-numbers
+	stepnumber=1,                   			% the step between two line-numbers. If it's 1 each line will be numbered
+	numbersep=5pt,                  		% how far the line-numbers are from the code
+	%	backgroundcolor=\color{white},  	% choose the background color. You must add \usepackage{color}
+	showspaces=false,               		% show spaces adding particular underscores
+	showstringspaces=false,         		% underline spaces within strings
+	showtabs=false,                 			% show tabs within strings adding particular underscores
+	%	frame=single,	                			% adds a frame around the code
+	%	tabsize=2,                				% sets default tabsize to 2 spaces
+	%	captionpos=b,                   			% sets the caption-position to bottom
+	breaklines=true,                			% sets automatic line breaking
+	breakatwhitespace=false,        		% sets if automatic breaks should only happen at whitespace
+	escapeinside={\%*}{*)}          		% if you want to add a comment within your code
+}
+
+\title{MATLAB code used to obtain Best Estimate of G, using the best linear fit in Shear Stress vs Shear Strain plot}
+\date{\vspace{-5ex}}	%to skip printing the dat in the title
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}	%To supress the printing of page number
+
+The following MATLAB code plots the best linear fit  :
+%%MATLAB Code
+\lstinputlisting[language=Matlab]{Stress_vs_Strain_Cycle1.m}
+
+\bigbreak 
+\bigbreak 
+
+\thispagestyle{empty}	%To supress the printing of page number
+\end{document}

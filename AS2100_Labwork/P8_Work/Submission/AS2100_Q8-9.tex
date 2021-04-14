@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}	%only 10 to 12 working in article
+\usepackage[left=2cm, right=2cm, top=1cm]{geometry}
+
+\usepackage{upgreek}
+%type greek letter command between $' '$ !!
+
+\title{8. Statistical Quantities Comparison}
+\date{\vspace{-5ex}}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}	%To supress the printing of page number
+%Using \hline incorrectly in a table:
+%When using \hline in a table, every instance except the first must be preceded with \\. 
+\begin{table}[h]
+	\begin{center}
+	\large
+\begin{tabular}{ |P{4cm}|P{2.5cm}|P{2.5cm}| }
+	\hline
+
+	\multicolumn{3}{|c|}{Statistical Quantities} \\
+	\hline
+	 & $\mu$ & $\sigma$ \\
+	\hline
+	Experiment 1&20.0107&3.0582\\
+	\hline
+	Experiment 2&19.5873&2.2000\\
+	\hline
+	Experiment 3&20.8629&3.7034\\
+	\hline
+	Experiment 4&20.6025&3.9131\\
+	\hline
+	Experiment 5&14.2585&0.8667\\
+	\hline
+	&&\\
+	Cycle 1&16.9635&2.7884\\
+	\hline
+
+\end{tabular}
+  \end{center}
+\end{table}
+\vspace{2cm}
+\begin{center}
+{\LARGE 9. Anomalous Experiment}
+\end{center}
+\large{
+Anamoly is Experiment 5.\\
+In Experiment 5, the load is too large which implies higher Stess and hence a higher value of strain.
+\begin{itemize}
+\item Range of Maximum Mass for other Experiments : 1.2-1.6kg
+\item Maximum Mass for Experiment 5 : 3kg\\
+\end{itemize}
+
+While performing this experiment we assume stress and strain to be very small and in the proportionality limit of the material. i.e Stress and Strain are linearly dependent\\
+
+Although the plots obtained by the other Experiments are also not completely linear due to which we do not get the accurate value,The percentage of linearity in the plot of Experiment 5 is extremely low which makes it the anamalous experiment
+
+}
+
+\end{document}
