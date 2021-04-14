@@ -1,2 +1,1 @@
-# AS2100_Project_Workstation
-AS2100 Basic Aerospace Engineering Lab
+# AS2100 Basic_Aerospace_Engineering_Lab Project_Workstation
