@@ -1,0 +1,57 @@
+% a sample report using Latex
+\documentclass{report}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\author{Your Name Here}
+\title{Your Title Here}
+\begin{document}
+\maketitle
+
+
+% there is a compile and an execute step
+
+\chapter{My Chapter}
+
+This is my first paragraph using latex. Hopefully it compiles fine. The first line says what sort of document to make (a report). The next line says to set the margins to 1 inch all around. The third line says to double space.
+The next lines give the information to put on the title page.
+
+The sixth line says ``Start the document", and the seventh means ``Make a titlepage, and put it here", and the eighth ``Make a table of contents, and put it here".
+
+Next, enter the text of your report. Where you want a chapter heading, put:
+
+\section{Adding figures}
+\subsection{Something here}
+\subsubsection{something else here}
+A sample script to create plots using Python and Octave was used and the results are shown in Figs.~\ref{fig:trig_func} and \ref{fig:sombrero}, respectively.
+
+% \begin{figure}[!h] % t,b
+% \centering
+% \includegraphics[width=0.65\columnwidth]{./trig_func.png}
+% \caption{Sine and cosine function between 0 to $\pi$.}
+% \label{fig:trig_func}
+% \end{figure}
+%
+% \begin{figure}[!h] % t,b
+% \centering
+% \includegraphics[width=0.65\columnwidth]{./sombrero_hat.png}
+% \caption{A function that looks like a hat.}
+% \label{fig:sombrero}
+% \end{figure}
+%
+
+\begin{figure}[!h]
+\centering
+\subfigure[Python]{\includegraphics[width=0.48\columnwidth]{./trig_func.png}\label{fig:trig_func}}
+\subfigure[Octave]{\includegraphics[width=0.48\columnwidth]{./sombrero_hat.png}\label{fig:sombrero}}
+\label{fig:sample_plots}
+\end{figure}
+
+Figure~\ref{fig:sombrero} shows a modified trignometric function that can be represented by
+\begin{equation} % math mode is active by default in an equation environment
+z = \sin(r)/r
+\end{equation}
+where $r = \sqrt{x^2+y^2}$.
+
+
+\end{document}

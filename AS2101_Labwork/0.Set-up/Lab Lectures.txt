@@ -1,0 +1,17 @@
+Hello Everyone,
+
+We have been thinking of how to conduct the laboratory portion of the course and have decided to hold it over the next month and finish it by the start of the next semester. My understanding is that you are fine with such an option to wrap up the course.
+
+The classes will be held on Saturdays starting from July 3rd and we will finish on July 31st. Each class will roughly have a 30 minute lecture component followed by 2 hours of lab practice (which are assignments to be completed on a computer -- coding/report writing). We will meet between 1400-1630 hours.
+
+Kindly have the following programs up and running on your computer prior to our first meeting
+1. Python version 3.8 along with numpy, scipy, and matplotlib libraries
+2. Octave version 5.2 (or above)
+3. Latex: www.latex-project.org/get
+
+Python38 + Libraries:
+	sudo apt install python3.8
+	sudo apt install ipython3
+	sudo apt-get install python3-numpy
+	sudo apt-get install python3-matplotlib
+	sudo apt-get install python3-scipy
