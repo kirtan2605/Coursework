@@ -1,0 +1,85 @@
+LINEAR REGRESSION
+
+for N data points, using linear regression, we have : 
+Y = mX+c
+which can be written in a matrix format:
+A(nx2).x(2x1) = B(nx1)
+where:
+A =	[x1  1]
+	[x2  1]
+	[x3  1]
+	[x4  1]
+	[.. ..]
+	[.. ..]
+	[xn  1]
+	
+b =	[y1]    = [y1 y2 y3......yn]^T
+	[y2]
+	[y3]
+	[y4]
+	[..]
+	[..]
+	[yn]	
+	
+b =	[m]    = [m c]^T
+	[c]
+	
+To solve this, 
+	((A^T).A).x = ((A^T).B)
+taking ((A^T).A) to be invertible, we solve for x using
+	x = [((A^T).A)^(-1)].(A^T).B
+
+m and c are obtained such that it "best fits" the data
+
+The m and c obtained do not ensure that all the points are on the line.
+	Ax-B = e
+the best fit line obtained, minimizes this e
+
+TASK:
+1. Download Datasets from Drive
+2. Perform Linear Regression using Y = mX + c
+	using first 50,100 and 200 points
+3. Display result in form of a table, one for each dataset
+	_____________
+	|Data| m | c |
+	| 50 | - | - |
+	|100 | - | - |
+	|200 | - | - |
+	--------------
+4. Based on the behaviour of m and c, infer data type
+	do you think a better model would work instead of y=mx+c? What? Why?
+5. Plot the data as a scatter plot and a lone for the model.
+	support previous inference
+
+NOTE:
+- Use Octave
+- Invert the Matrix using Gaussian Elimination (DO NOT use inv(A) or A\B)
+
+Documents to be submitted:
+- *.m
+- *.tex
+- *.pdf
+
+Steps:
+- Read the Data - DONE
+- Generate Matrix A and B - DONE
+- Transpose A and pre-multiply - DONE
+- Gaussian-Elimination on (A^T).A - DONE
+- pre-multiply
+
+Recorded Values
+1.Dataset1: 
+a.050 points: m= 2.0113  c= 1.1880 
+b.100 points: m= 2.0080  c= 1.2660
+c.200 points: m= 2.0057  c= 1.3771
+
+2.Dataset2: 
+a.050 points: m= 2.0111  c= 1.1956
+b.100 points: m= 2.0079  c= 1.2719
+c.200 points: m= 2.0056  c= 1.3810
+ 
+3.Dataset3: 
+a.050 points: m= 2.0000   c= 1.0053  
+b.100 points: m= 2.0000   c= 1.0054
+c.200 points: m= 2.0000   c= 1.0049
+
