@@ -167,17 +167,7 @@ As the number of subintervals tends to $\infty$, the Absolute Error tends to 0
 \pagebreak
 
 \section{Order of Accuracy}
-The 'order of accuracy' is a way to quantify the accuracy of the method i.e. how close the output of the method si to the actual value. Since the value we get from numerical method is an approximation to the actual value, there is an error value which is greater than zero, as the approximate value is not exactly the same as the actual value but close to it. The error value is found to depend on the 'step-size' that is used, and the error decreases if we decrease the step-size and we get more "accurate" result as the approximation value inches closer to the actual value.\\
-
-We get the error dependence on the step-size as : 
-\[ E(h) = Ch^n\]
-where :
-\begin{itemize}
-	\item \textbf{E(h)} is the error which is dependent on the step-size
-	\item \textbf{h} is the step-size
-	\item \textbf{C} is a constant
-\end{itemize}
-Here the value \textbf{n} gives the order of accuracy.\\
+The 'order of accuracy' is a way to quantify the accuracy of the method i.e. how close the output of the method is to the actual value. Since the value we get from numerical method is an approximation to the actual value, there is an error value which is greater than zero, as the approximate value is not exactly the same as the actual value but close to it.\\
 
 The degree of accuracy of a Quadrature Formula is the largest positive integer n such that the formula is for x$^k$ for each k = 0,1,...n.\\
 
@@ -196,7 +186,6 @@ Let f(x) = x$^0$\\
 For which integral value~~$\int_{a}^{b} x^0 \,dx~=~\int_{a}^{b} 1 \,dx~=~ b-a$\\
 And the Rectangular Rule (for all the 3 sub-rules) gives value: $(b-a).[1]~=~b-a$ \\
 Hence there is \textbf{No Error} for x$^0$ \\
-\pagebreak
 
 For f(x) = x$^1$\\
 For which integral value~~$\int_{a}^{b} x \,dx~=~\frac{b^2-a^2}{2}$\\
